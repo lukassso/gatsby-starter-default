@@ -1,7 +1,7 @@
-import React from 'react';
-import Layout from '../Layout/Layout';
-import Button from '../components/Button/Button';
-import { Link } from 'gatsby';
+import React from 'react'
+import Layout from '../Layout/Layout'
+import { Button } from '../components/Button/button'
+import { Link } from 'gatsby'
 
 const AboutPage = () => (
   <Layout>
