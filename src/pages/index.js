@@ -10,6 +10,8 @@ const IndexPage = () => (
     <H1>Homework Excuse Generator</H1>
     <Button  onMouseEnter={Excuse} >Click here!</Button>
     <div id="excuses"></div>
+    
+
   </Layout>
 )
 
