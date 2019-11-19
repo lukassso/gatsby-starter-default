@@ -1,0 +1,173 @@
+.cc-profile-image svg{
+position: relative;
+	margin: 0 auto;
+	margin-top: 1rem;
+    width: 7rem;
+    height: 7rem;
+    display: block;
+}
+@media (max-width: $sm) {
+	.cc-profile-image {
+		display: block;
+		position: relative;
+		margin: 0 auto;
+		svg {
+			margin-top: 1rem;
+			width: 7rem;
+			height: 7rem;
+		}
+	}
+}
+
+.price {
+	margin: 0;
+}
+.description {
+	border-top: 0.0625rem solid $gray;
+	margin: 2rem 0;
+	padding: 1rem 0 0 0;
+}
+.add-to-cart {
+	position: relative;
+	display: inline-block;
+	background: $button;
+	color: $white;
+	border: none;
+	border-radius: 0.5rem;
+	padding: 1.25rem 3.5rem;
+	font-size: 1rem;
+	text-transform: uppercase;
+	cursor: pointer;
+	transform: translateZ(0);
+	transition: color 0.3s ease;
+	letter-spacing: 0.0625rem;
+	&:hover {
+		&::before {
+			transform: scaleX(1);
+			
+		}
+	}
+	&::before {
+		position: absolute;
+		content: '';
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		border-radius: 0.5rem;
+		background: $button-hover;
+		transform: scaleX(0);
+		transform-origin: 0 50%;
+		transition: transform 0.3s ease-out;
+	}
+}
+
+.b2{
+	margin: 2rem 0.6rem;
+}
+
+.offer-box {
+	margin-top: 3rem;
+}
+.offer-box .offer-block {
+	border: 0.01rem solid #e3dddd;
+	margin: 0.6rem;
+}
+.offer-box .offer-block img{
+	margin: 0 auto;
+	display: block;
+	width: 70%;
+	height: 60%;
+}
+.offer-box .offer-block h4{
+	font-size: 1rem;
+	font-weight: 700;
+	text-align: center;
+}
+.aster1 p{
+	font-size: 0.8rem;
+	font-weight: 200;
+	text-align: left;
+	margin: 0.6rem;
+}
+
+footer {
+	padding: 1rem 0;
+	text-align: center;
+}
+.copyright {
+margin: 0 auto;
+font-size: 0.9rem;
+}
+
+.social {
+  text-align:left;
+  a {
+    display: inline-block;
+    padding: 0.4rem;
+    width: 3rem;
+    height: 3rem;
+    margin: 0 2px;
+    background: #fff;
+    border-radius: 50%;
+    vertical-align: middle;
+    }
+  }
+
+.product-image {
+	display: none;
+}
+
+.image-list {
+	li {
+		margin: 0;
+	}
+}
+
+@keyframes fadeImg {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@media (min-width: $md) {
+	.product-image img, .image-list img {
+		width: 100%;
+	}
+
+	.product-image {
+		display: block;
+		img {
+			height: 52vh;
+			&.active {
+				display: block;
+				margin: 0 0 0.75rem 0;
+			}
+		}
+	}
+
+	.image-list {
+		display: flex;
+		overflow: hidden;
+		li {
+			margin: 0 0.75rem 0 0;
+			flex-basis: 100%;
+			&:nth-child(3) {
+				margin: 0;
+			}
+		}
+		img {
+			height: 10rem;
+			width: 100%;
+			transition: opacity 0.3s ease;
+			cursor: pointer;
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+	}
+}
