@@ -11,7 +11,6 @@ const IndexPage = () => (
     <Button  onMouseEnter={Excuse} >Click here!</Button>
     <div id="excuses"></div>
     
-
   </Layout>
 )
 
